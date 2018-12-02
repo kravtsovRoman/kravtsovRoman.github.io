@@ -3269,7 +3269,12 @@ button:focus {
   display: inline-block;
 }
 
+.comparison .table-desc .jq-ry-container {
+  padding: 0;
+}
+
 .comparison .table-desc .product-layout_price {
+  width: 100%;
   display: inline-block;
 }
 
