@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -26,6 +25,13 @@ body {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wm-header {
@@ -913,10 +919,10 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -928,7 +934,7 @@ body {
 
 .product-layout_price p {
   display: inline-block;
-  font-size: 27px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -965,6 +971,22 @@ body {
 .product-layout_price a img {
   width: 22px;
   margin-right: 4px;
+}
+
+.product-layout_price .more-details {
+  background: none;
+  color: #ee602a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  padding: 0;
+}
+
+.product-layout_price .more-details:hover {
+  color: #c63636;
+  background: none;
 }
 
 .product-layout_desc {

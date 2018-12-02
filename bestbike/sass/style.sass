@@ -6,8 +6,8 @@ $dark_red: #c63636
 $violet: #532185
 $light_blue: #2929b7 
 $menu: #22314b
-html,
-body
+
+html, body
   height: 100%
 body
   font-family: 'Open Sans', sans-serif
@@ -18,6 +18,8 @@ body
   height: 100%
   &_content
     flex: 1 0 auto
+.flex 
+  display: flex
 .wm-header
   padding: 25px 0px
   background-color: $menu
@@ -107,7 +109,6 @@ body
               text-align: right
             @media screen and (max-width: 768px)
               font-size: 13px
-              // top: 6px
             img
               position: relative
               top: -3px
@@ -200,7 +201,6 @@ body
           content: url('../img/arrow-menu.png')
           display: block
           transform: rotate(0deg)
-          
     &.show
       a.dropdown-toggle
         color: $orange
@@ -391,7 +391,6 @@ body
       font-size: 14px
       text-align: center
       line-height: 1.3
-    
 .banner
   background-color: $blue
   &_slider
@@ -477,10 +476,8 @@ body
     position: relative
     top: 3px
     margin: 0px 15px
-
 .title-second
   margin-bottom: 50px
-// product
 .product
   &:hover
     padding-left: 0px
@@ -490,7 +487,6 @@ body
       padding: 23px 15px 0px
     .product-layout_desc-full
       display: block
-
   &-layout
     position: relative
     &_img
@@ -527,14 +523,14 @@ body
               height: 32px
     &_price
       display: flex
-      align-items: center
+      align-items: baseline
       justify-content: space-between
       color: $menu
       font-weight: 600
       margin-bottom: 15px
       p
         display: inline-block
-        font-size: 27px
+        font-size: 25px
         margin: 0
         span
           font-size: 20px
@@ -553,7 +549,15 @@ body
         img
           width: 22px
           margin-right: 4px
-
+      .more-details
+        background: none
+        color: $orange
+        box-sizing: border-box
+        transition: all .2s
+        padding: 0
+        &:hover
+          color: $dark_red
+          background: none
     &_desc
       padding: 23px 0px
       &-border
@@ -668,7 +672,6 @@ body
     .product-layout_desc-different
       .stock
         font-size: 15px
-
 .advantages
   background-color: $blue
   color: #fff
@@ -679,8 +682,6 @@ body
   h2
     color: #fff
   &-block
-    // display: flex
-    // align-items: flex-start
     @media screen and (max-width: 992px)
       margin-bottom: 20px
     &_img
@@ -731,7 +732,6 @@ body
             transform: rotate(-90deg)
       @media screen and (max-width: 576px)
         height: 38px
-
     &_collapse
       .collapse,
       .collapsing
@@ -745,7 +745,6 @@ body
             font-size: 14px
           @media screen and (max-width: 576px)
             margin-top: 0          
-
 .about
   background-image: url('../img/about-bg.png')
   background-size: cover
@@ -770,8 +769,6 @@ body
       display: none
       &_btn
         display: block
-
-
 .consultation
   background-color: $blue
   color: #fff
@@ -793,7 +790,6 @@ body
       flex-direction: column
       align-items: center
       margin-top: 25px
-
     input
       margin-right: 20px
       text-transform: uppercase
@@ -822,7 +818,6 @@ body
         color: #fff
       @media screen and (max-width: 768px)
         margin-top: 23px
-
 .articles
   margin-bottom: 25px
   h2
@@ -913,7 +908,6 @@ body
         @media screen and (max-width: 992px)
           font-size: 18px
         @media screen and (max-width: 768px)
-          // font-size: 18px
           min-height: auto
           margin: 15px 0px
       p
@@ -938,9 +932,6 @@ body
         text-decoration: none
         &::after
           content: url('../img/arrow-next.png')
-
-
-
 
 
 
@@ -1035,7 +1026,6 @@ body
           transform: translateX(-50%)
           left: 50%
           background-size: cover
-    
   &_sliderThumbnails
     overflow: hidden
     height: 448px
@@ -1051,7 +1041,6 @@ body
       height: 121px
   .slick-dots li.slick-active button:before
     color: $blue
-
 .product-single
   &-layout
     position: relative
@@ -1417,7 +1406,6 @@ body
       height: 130px
       object-fit: cover
       object-position: 50% 50%
-      // padding: 0px 15px
   p
     font-size: 20px
     font-weight: 600
@@ -1432,7 +1420,6 @@ body
       @media screen and (max-width: 768px)
         &:hover
           color: $orange
-
 
 #s_and_other
   .shipping_and_pay
@@ -1582,7 +1569,6 @@ footer
         margin-right: 10px
       &:last-child
         margin-right: 0px
-        
   ul
     padding: 0
     margin: 0px 0px 0px 70px
@@ -1639,8 +1625,6 @@ footer
       @media screen and (max-width: 992px)
         margin-bottom: 5px
 
-
-
 // default
 h4
   font-size: 20px
@@ -1690,7 +1674,6 @@ button:focus
   color: #4c5a72
 .nav-tabs .nav-item
   margin-bottom: 0
-
 .page-item
   &:first-child
     .page-link
@@ -1740,6 +1723,8 @@ button:focus
   border-color: $orange
 .page-item.disabled .page-link
   border-color: transparent
+
+
 
 .category
   margin-top: 25px
@@ -1802,7 +1787,6 @@ button:focus
         margin-bottom: 10px
     .custom-checkbox .custom-control-label::before
       border-radius: 0
-
     &-mobile
       display: none
       @media screen and (max-width: 992px)
@@ -1831,11 +1815,9 @@ button:focus
             width: 100%
             max-width: 320px
             padding: 5px 15px
-
 @media screen and (max-width: 992px)
   section.wm-header .wm-header_second-menu ul li:last-child
     margin-bottom: 0
-
 @media screen and (max-width: 768px)
   #options,
   #s_and_other
@@ -1843,5 +1825,3 @@ button:focus
       width: 100%
       margin-bottom: 10px
       text-align: center
-      // &:last-child
-      //   margin-bottom: 0
