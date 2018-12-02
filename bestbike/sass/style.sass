@@ -487,6 +487,10 @@ body
       padding: 23px 15px 0px
     .product-layout_desc-full
       display: block
+    .product-layout_img-picture
+      display: none
+    .product-layout_img-picture-second
+      display: block
   &-layout
     position: relative
     &_img
@@ -494,11 +498,14 @@ body
       &-wrap
         height: 175px
         overflow: hidden
-      &-picture
+      &-picture, &-picture-second
         width: 100%
         height: 175px
         object-fit: cover
         object-position: 50% 50%
+        transition: all .3s
+        &-second
+          display: none 
       &-icon
         &-wrap
           position: absolute
@@ -556,7 +563,7 @@ body
         transition: all .2s
         padding: 0
         &:hover
-          color: $dark_red
+          color: $blue
           background: none
     &_desc
       padding: 23px 0px
@@ -568,7 +575,7 @@ body
         // @media screen and (max-width: 768px)
           min-height: 25px
         a
-          font-size: 17px
+          font-size: 18px
           font-weight: 600
           color: $menu
           text-transform: uppercase
