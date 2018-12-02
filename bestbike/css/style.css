@@ -27,13 +27,6 @@ body {
           flex: 1 0 auto;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .wm-header {
   padding: 25px 0px;
   background-color: #22314b;
@@ -1483,7 +1476,7 @@ body {
 }
 
 .articles {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .articles h2 {
@@ -3158,4 +3151,8 @@ button:focus {
     margin-bottom: 10px;
     text-align: center;
   }
+}
+
+.favorites-tittle {
+  margin-bottom: 35px;
 }
