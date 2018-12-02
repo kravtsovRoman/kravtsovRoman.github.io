@@ -3185,12 +3185,16 @@ button:focus {
   }
 }
 
-.favorites-tittle {
+.favorites-title {
   margin-bottom: 25px;
 }
 
-.comparison {
-  margin-bottom: 50px;
+.comparison .favorites-title {
+  color: #0b1c38;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .comparison .slider-buttons {
