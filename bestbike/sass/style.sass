@@ -1741,8 +1741,6 @@ button:focus
 .page-item.disabled .page-link
   border-color: transparent
 
-
-
 .category
   margin-top: 25px
   &.indent-bottom
@@ -1842,11 +1840,15 @@ button:focus
       width: 100%
       margin-bottom: 10px
       text-align: center
+
+
+
+      
 .favorites
   &-title
     margin-bottom: 25px
 
-.comparison
+.comparison, .tab-specifications
   .favorites-title
     color: #0b1c38;
     font-size: 34px;
@@ -1878,8 +1880,9 @@ button:focus
   .table
     &-foto
       width: 175px
-      height: 120px
+      height: 115px
       margin-right: 20px
+      margin-top: 5px 
       img
         width: 100%
         height: 100%
@@ -1912,3 +1915,21 @@ button:focus
           display: block
           text-align: center
 
+.tab-specifications
+  background: #f1f3f7
+  table 
+    font-size: 16px!important
+    padding: 30px 
+    tr
+      &:first-child
+        font-weight: 400
+    td
+      font-size: 16px!important
+      line-height: 24px
+.tab-decription
+  padding: 30px 20px
+  background: #f1f3f7
+
+.tab-video
+  width: 99.9%
+  margin-bottom: 30px

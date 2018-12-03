@@ -3196,7 +3196,7 @@ button:focus {
   margin-bottom: 25px;
 }
 
-.comparison .favorites-title {
+.comparison .favorites-title, .tab-specifications .favorites-title {
   color: #0b1c38;
   font-size: 34px;
   text-align: center;
@@ -3204,54 +3204,55 @@ button:focus {
   text-transform: uppercase;
 }
 
-.comparison .slider-buttons {
+.comparison .slider-buttons, .tab-specifications .slider-buttons {
   margin-bottom: 50px;
 }
 
-.comparison table {
+.comparison table, .tab-specifications table {
   border-collapse: separate;
   border-spacing: 0px 10px;
   margin-bottom: 75px;
 }
 
-.comparison table td {
+.comparison table td, .tab-specifications table td {
   width: 32%;
   vertical-align: top;
 }
 
-.comparison table td:first-child, .comparison table tr:first-child {
+.comparison table td:first-child, .comparison table tr:first-child, .tab-specifications table td:first-child, .tab-specifications table tr:first-child {
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
 }
 
-.comparison .item-foto td {
+.comparison .item-foto td, .tab-specifications .item-foto td {
   vertical-align: inherit;
 }
 
-.comparison .item-name td {
+.comparison .item-name td, .tab-specifications .item-name td {
   text-transform: uppercase;
 }
 
-.comparison .table-foto {
+.comparison .table-foto, .tab-specifications .table-foto {
   width: 175px;
-  height: 120px;
+  height: 115px;
   margin-right: 20px;
+  margin-top: 5px;
 }
 
-.comparison .table-foto img {
+.comparison .table-foto img, .tab-specifications .table-foto img {
   width: 100%;
   height: 100%;
 }
 
-.comparison .table-desc .stock {
+.comparison .table-desc .stock, .tab-specifications .table-desc .stock {
   font-size: 16px;
   font-weight: 600;
   color: #108b41;
   display: inline-block;
 }
 
-.comparison .table-desc .rating-reviews {
+.comparison .table-desc .rating-reviews, .tab-specifications .table-desc .rating-reviews {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
@@ -3262,14 +3263,14 @@ button:focus {
           align-items: baseline;
 }
 
-.comparison .table-desc .rating-reviews a {
+.comparison .table-desc .rating-reviews a, .tab-specifications .table-desc .rating-reviews a {
   font-size: 16px;
   color: #22314b;
   text-decoration: none;
   font-weight: 600;
 }
 
-.comparison .table-desc .rating-reviews img {
+.comparison .table-desc .rating-reviews img, .tab-specifications .table-desc .rating-reviews img {
   position: relative;
   top: -2px;
   width: 16px;
@@ -3277,16 +3278,44 @@ button:focus {
   display: inline-block;
 }
 
-.comparison .table-desc .jq-ry-container {
+.comparison .table-desc .jq-ry-container, .tab-specifications .table-desc .jq-ry-container {
   padding: 0;
 }
 
-.comparison .table-desc .product-layout_price {
+.comparison .table-desc .product-layout_price, .tab-specifications .table-desc .product-layout_price {
   width: 100%;
   display: inline-block;
 }
 
-.comparison .table-desc .product-layout_price a {
+.comparison .table-desc .product-layout_price a, .tab-specifications .table-desc .product-layout_price a {
   display: block;
   text-align: center;
+}
+
+.tab-specifications {
+  background: #f1f3f7;
+}
+
+.tab-specifications table {
+  font-size: 16px !important;
+  padding: 30px;
+}
+
+.tab-specifications table tr:first-child {
+  font-weight: 400;
+}
+
+.tab-specifications table td {
+  font-size: 16px !important;
+  line-height: 24px;
+}
+
+.tab-decription {
+  padding: 30px 20px;
+  background: #f1f3f7;
+}
+
+.tab-video {
+  width: 99.9%;
+  margin-bottom: 30px;
 }
