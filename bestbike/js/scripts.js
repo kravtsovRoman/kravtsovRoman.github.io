@@ -140,6 +140,14 @@ $(document).ready(function () {
     });
   });
 
+  $(function () {
+    $(".review-rating").rateYo({
+      starWidth: "30px",
+      normalFill: "#fce69f",
+      ratedFill: "#ffaf10"
+    });
+  });
+
   $('.about-hidden_btn span').on('click', () => {
     $('.about-hidden').slideToggle();
   });

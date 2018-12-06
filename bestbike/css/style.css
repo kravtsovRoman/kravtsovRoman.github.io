@@ -3319,3 +3319,135 @@ button:focus {
   width: 99.9%;
   margin-bottom: 30px;
 }
+
+.tab-video .reviews {
+  background: #f1f3f7;
+  padding: 30px;
+}
+
+.tab-video .reviews input {
+  width: 47%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.tab-video .reviews button {
+  display: block;
+  margin: 0 auto;
+  background: #0b1c38;
+  padding: 5px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.tab-video .reviews button:hover {
+  background: #ee602a;
+}
+
+.tab-video .reviews-text {
+  margin-bottom: 30px;
+}
+
+.tab-video .reviews-text strong p {
+  margin-bottom: 10px;
+}
+
+.tab-video .reviews-form {
+  margin-top: 60px;
+  text-align: center;
+  color: #0b1c38;
+}
+
+.tab-video .reviews-form form .area-block {
+  text-align: left;
+}
+
+.tab-video .reviews-form form .area-block label {
+  text-align: left;
+  color: #ee602a;
+  text-transform: uppercase;
+}
+
+.tab-video .reviews-form form .area-block textarea {
+  width: 100%;
+  background: none;
+  border: 2px solid #000;
+  outline: none;
+  resize: none;
+}
+
+.tab-video .reviews-form form ::-webkit-input-placeholder {
+  color: #ee602a;
+  text-transform: uppercase;
+}
+
+.tab-video .reviews .rating-block {
+  margin: 20px 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.tab-video .reviews .rating-block a {
+  display: block;
+  text-transform: uppercase;
+  color: #ee602a;
+}
+
+.tab-video .reviews .code-block {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: unset;
+  -webkit-align-items: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.tab-video .reviews .code-block > div {
+  width: 33%;
+}
+
+.tab-video .reviews .code-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.tab-video .reviews .code-text p {
+  margin-bottom: 0;
+}
+
+.tab-video .reviews .code-input {
+  margin-top: 5px;
+}
+
+.tab-video .reviews .code-input input {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.tab-video .reviews input[type=submit] {
+  background: #ee602a;
+  border: none;
+  max-width: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+
+.tab-video .reviews input[type=submit]:hover {
+  background: #0b1c38;
+}
