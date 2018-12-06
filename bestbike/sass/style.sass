@@ -1856,7 +1856,7 @@ button:focus
     font-weight: 600;
     text-transform: uppercase;
   .slider-buttons
-    margin-bottom: 50px
+    margin: 0 auto 50px auto
   table
     border-collapse: separate
     border-spacing: 0px 10px
@@ -1964,6 +1964,13 @@ button:focus
       text-align: center
       color: $blue
       form
+        .inputs-block
+          @media screen and (max-width: 768px)
+            flex-direction: column
+            justify-content: center
+            & > input
+              width: 80% 
+              margin: 0 auto 20px
         .area-block
           text-align: left
           label
@@ -1992,8 +1999,14 @@ button:focus
       &-block
        justify-content: space-around
        align-items: unset
+       @media screen and (max-width: 768px)
+        justify-content: center 
+        flex-direction: column
        & > div
-        width: 33%  
+        width: 33% 
+        margin: 0 auto 15px
+        @media screen and (max-width: 768px)
+          width: 55% 
       &-text
         font-family: Helvetica, sans-serif
         font-size: 30px
@@ -2018,3 +2031,14 @@ button:focus
       &:hover
         background: $blue
           
+.head-table 
+  @media screen and (max-width: 1200px)
+    flex-direction: column
+    flex-wrap: wrap
+.table-container
+  @media screen and (max-width: 768px)
+    width: 800px
+    overflow-x: scroll
+  td
+    @media screen and (max-width: 768px)
+      padding-right: 30px

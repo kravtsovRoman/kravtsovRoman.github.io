@@ -41,7 +41,6 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
         }
       },
       {
@@ -63,10 +62,8 @@ $(document).ready(function () {
   });
 
   $('.popular_slider').slick({
-    // rows: 2,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // dots: true,
     arrows: true,
     prevArrow: $('.popular_prev'),
     nextArrow: $('.popular_next'),
@@ -77,7 +74,6 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
         }
       },
       {
@@ -152,17 +148,17 @@ $(document).ready(function () {
     $('.about-hidden').slideToggle();
   });
 
-  $('[name="phone"]').mask("(999) 999-9999");
-  $('#consultation').on('submit', (e) => {
-    e.preventDefault();
-    if($('[name="name"]').val().length < 3) {
-      alert('Введите имя!');      
-    } else if($('[name="phone"]').val().length < 14) {
-      alert('Введите номер!');
-    } else {
-      console.log('ok');
-    }
-  });
+  // $('[name="phone"]').mask("(999) 999-9999");
+  // $('#consultation').on('submit', (e) => {
+  //   e.preventDefault();
+  //   if($('[name="name"]').val().length < 3) {
+  //     alert('Введите имя!');      
+  //   } else if($('[name="phone"]').val().length < 14) {
+  //     alert('Введите номер!');
+  //   } else {
+  //     console.log('ok');
+  //   }
+  // });
 
   $('.single-cart_sliderMain').slick({
     slidesToShow: 1,

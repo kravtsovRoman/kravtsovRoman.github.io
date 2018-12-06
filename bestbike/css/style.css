@@ -3205,7 +3205,7 @@ button:focus {
 }
 
 .comparison .slider-buttons, .tab-specifications .slider-buttons {
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 
 .comparison table, .tab-specifications table {
@@ -3362,6 +3362,24 @@ button:focus {
   color: #0b1c38;
 }
 
+@media screen and (max-width: 768px) {
+  .tab-video .reviews-form form .inputs-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tab-video .reviews-form form .inputs-block > input {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+}
+
 .tab-video .reviews-form form .area-block {
   text-align: left;
 }
@@ -3413,8 +3431,29 @@ button:focus {
           align-items: unset;
 }
 
+@media screen and (max-width: 768px) {
+  .tab-video .reviews .code-block {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .tab-video .reviews .code-block > div {
   width: 33%;
+  margin: 0 auto 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-video .reviews .code-block > div {
+    width: 55%;
+  }
 }
 
 .tab-video .reviews .code-text {
@@ -3450,4 +3489,30 @@ button:focus {
 
 .tab-video .reviews input[type=submit]:hover {
   background: #0b1c38;
+}
+
+@media screen and (max-width: 1200px) {
+  .head-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    width: 800px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-container td {
+    padding-right: 30px;
+  }
 }
