@@ -860,10 +860,6 @@ body {
   margin: 0px 15px;
 }
 
-.title-second {
-  margin-bottom: 50px;
-}
-
 .product:hover {
   padding-left: 0px;
   padding-right: 0px;
@@ -1064,6 +1060,7 @@ body {
   font-weight: 600;
   color: #22314b;
   text-transform: uppercase;
+  outline: none;
 }
 
 .product-layout_desc-different {
