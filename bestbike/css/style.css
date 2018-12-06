@@ -884,6 +884,7 @@ body {
 }
 
 .product:hover .product-layout_img-picture-second {
+  width: 100%;
   display: block;
 }
 
@@ -900,7 +901,7 @@ body {
   overflow: hidden;
 }
 
-.product-layout_img-picture, .product-layout_img-picture-second {
+.product-layout_img-picture {
   width: 100%;
   height: 175px;
   -o-object-fit: cover;
@@ -912,7 +913,16 @@ body {
   transition: all .3s;
 }
 
-.product-layout_img-picture-second, .product-layout_img-picture-second-second {
+.product-layout_img-picture-second {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   display: none;
 }
 
