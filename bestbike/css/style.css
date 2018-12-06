@@ -3518,6 +3518,10 @@ button:focus {
   }
 }
 
+.table-container table {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .table-container td {
     padding-right: 30px;
