@@ -685,6 +685,10 @@ body {
   position: relative;
 }
 
+.wm-header_menu .basket:hover {
+  color: #0b1c38;
+}
+
 @media screen and (max-width: 768px) {
   .wm-header_menu .basket {
     padding: 31px 45px;
@@ -3432,10 +3436,10 @@ button:focus {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-box-align: unset;
-  -webkit-align-items: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
@@ -3468,6 +3472,7 @@ button:focus {
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
+  margin-bottom: 4px !important;
 }
 
 .tab-video .reviews .code-text p {

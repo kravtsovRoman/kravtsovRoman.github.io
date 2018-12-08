@@ -370,6 +370,8 @@ body
     background: url('../img/basket.png') 15% no-repeat $orange
     background-size: 20%
     position: relative
+    &:hover
+      color: $blue
     @media screen and (max-width: 768px)
       padding: 31px 45px
       max-width: 70px
@@ -2003,7 +2005,7 @@ button:focus
     .code
       &-block
        justify-content: space-around
-       align-items: unset
+       align-items: flex-end
        @media screen and (max-width: 768px)
         justify-content: center 
         flex-direction: column
@@ -2017,6 +2019,7 @@ button:focus
         font-size: 30px
         font-weight: 800
         text-transform: uppercase
+        margin-bottom: 4px!important
         p
           margin-bottom: 0
       &-input
