@@ -3567,6 +3567,7 @@ button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: uppercase;
 }
 
 #modalBuy .modal-header h5 {
@@ -3590,7 +3591,7 @@ button:focus {
 }
 
 #modalBuy .modal-footer a {
-  padding: 5px 10px;
+  padding: 3px 10px;
 }
 
 #modalBuy .modal-footer .continue-shopping {
@@ -3626,7 +3627,6 @@ button:focus {
   position: absolute;
   top: 15px;
   right: 15px;
-  border: 1px solid #777;
   padding: 0 5px;
 }
 
