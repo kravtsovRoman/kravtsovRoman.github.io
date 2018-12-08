@@ -2049,3 +2049,93 @@ button:focus
   td
     @media screen and (max-width: 768px)
       padding-right: 30px
+
+.modal
+  .btn-modal
+    border-radius: 0
+    text-transform: uppercase
+    padding: 5px 20px
+    margin: 0 auto
+    color: #fff!important
+    border: 2px solid $orange
+  &-present
+    width: 400px
+
+  &-content
+    border-radius: 0
+    text-align: center
+.btn-modal
+  background: $orange
+  color: #fff
+  &:hover
+    background: $blue
+    border-color: $blue
+
+#modalBuy
+  .close
+      margin: -1rem -1rem -1rem;
+  .modal
+    &-header
+      align-items: center
+      h5
+        margin: 0 auto
+        font-weight: 600
+        font-size: 24px
+    &-body
+      padding: 30px 20px
+    &-footer
+      display: flex
+      justify-content: space-around
+      a
+        padding: 5px 10px
+      .continue-shopping
+        background: transparent
+        border: 2px solid $orange
+        color: $orange!important
+        &:hover
+          background: $blue
+          border-color: $blue
+          color: #fff!important
+.main-buy
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  position: relative
+  margin-bottom: 30px
+  &-close
+    position: absolute
+    top: 15px
+    right: 15px
+    border: 1px solid #777
+    padding: 0 5px
+  &-text
+    &-title
+      font-weight: 600
+      background-color: transparent!important
+      font-size: 14px!important
+      padding: 0!important
+      &:hover
+        color: $orange!important
+        cursor: pointer
+    &-price
+      color: $orange
+  p
+    display: block
+    font-size: 14px
+    text-align: left
+    font-weight: 400
+    &:first-child
+      font-weight: 600
+    span
+      font-size: 14px
+
+  img
+    width: 100px
+    margin-right: 10px
+    border: 2px solid $blue
+
+.all-price
+  display: flex
+  justify-content: space-between
+  padding: 20px 10px
+  border: 1px solid #eee

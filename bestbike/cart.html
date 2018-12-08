@@ -339,7 +339,60 @@
                     </div>
                     <div class="product-single-layout_price">
                       <p>11 880 <span>грн</span></p>
-                      <a href="#"><img src="img/basket.png" alt="купить"> Купить</a>
+                      <a href="" data-toggle="modal" data-target="#modalBuy">
+                        <img src="img/basket.png" alt="купить"> 
+                        Купить
+                      </a>
+                      <div class="modal fade" id="modalBuy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                                <div class="main-buy">
+                                  <img src="https://wallpaperfm.com/img/original/c/9/b/30291.jpg" alt="">
+                                  <div class="main-buy-text">
+                                    <a class="main-buy-text-title">ARDIS HARLAN 27,5" рама 18" Черный</a>
+                                    <p class="main-buy-text-price">5540</p>
+                                    <p>Кол-во: <span>7</span></p>
+                                  </div>
+                                  <div class="main-buy-close close">
+                                    <span title="Удалить товар" aria-hidden="true">&times;</span>
+                                  </div>
+                                </div>
+                                <div class="main-buy">
+                                  <img src="https://wallpaperfm.com/img/original/c/9/b/30291.jpg" alt="">
+                                  <div class="main-buy-text">
+                                    <a class="main-buy-text-title">ARDIS HARLAN 27,5" рама 18" Черный</a>
+                                    <p class="main-buy-text-price">5540</p>
+                                    <p>Кол-во: <span>7</span></p>
+                                  </div>
+                                  <div class="main-buy-close close">
+                                    <span title="Удалить товар" aria-hidden="true">&times;</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="all-price">
+                                <div class="all-price-text">
+                                  Всего:
+                                </div>
+                                <div class="all-price-number">
+                                  44320
+                                </div>
+                              </div>
+                             </div>
+                            <div class="modal-footer">
+                              <a class="btn btn-modal continue-shopping" data-dismiss="modal">Продолжить покупки</a>
+                              <a class="btn btn-modal" href="#">Оформить заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="product-single-layout_desc-full">
@@ -362,9 +415,9 @@
                     </ul>
                     <div class="product-single-layout_desc-full_lc">
                       <ul>
-                        <li><a href="#"><img src="img/heart-active.png" alt="like">В избранное</a></li>
+                        <li><a href="favorites.html"><img src="img/heart-active.png" alt="like">В избранное</a></li>
                         <span></span>
-                        <li><a href="#"><img src="img/compare-active.png" alt="compare">В сравнение</a></li>
+                        <li><a href="comparison.html"><img src="img/compare-active.png" alt="compare">В сравнение</a></li>
                       </ul>
                     </div>
                   </div>
@@ -614,7 +667,28 @@
                 <div class="col-md-6 col-lg-6 col-xl-6">
                   <div class="right-sideblock_text">
                     <p>Каждый из всех людей хотя бы один раз в своей жизни пробовал жизни.</p>
-                    <a href="#">Подробнее</a>
+                    <a href="#" data-toggle="modal" data-target="#modalPresent">Подробнее</a>
+                  </div>
+                  <div class="modal fade" id="modalPresent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Ваш подарок к велосипеду</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas sit autem corporis in impedit repudiandae esse dignissimos. Distinctio nihil dignissimos magnam quibusdam incidunt ullam quaerat praesentium ratione cumque iure.
+                          </p>
+                          <img class="modal-present" src="https://velogo.com.ua/uploads/images/action/comp-neko-podarok_336.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-modal" data-dismiss="modal">Закрыть</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
