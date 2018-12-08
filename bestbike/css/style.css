@@ -3570,6 +3570,10 @@ button:focus {
   text-transform: uppercase;
 }
 
+#modalBuy .modal-header .close {
+  font-size: 40px;
+}
+
 #modalBuy .modal-header h5 {
   margin: 0 auto;
   font-weight: 600;
